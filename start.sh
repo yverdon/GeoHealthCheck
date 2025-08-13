@@ -2,7 +2,7 @@
 
 COMPOSE_FILE=./docker/compose/docker-compose.yml
 
-docker compose down -v
+docker compose -f "${COMPOSE_FILE}" down -v
 
 docker compose -f "${COMPOSE_FILE}" up --build -d
 
